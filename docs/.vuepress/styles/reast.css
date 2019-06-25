@@ -1,0 +1,37 @@
+table {
+  display: table !important;
+}
+
+blockquote {
+  border-left: 4px solid var(--theme-color, #42b983);
+  color: #858585;
+  margin: 2em 0;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content code {
+  border-radius: 2px;
+  color: #e96900;
+  font-size: .8rem;
+  margin: 0 2px;
+  padding: 3px 5px;
+  white-space: pre-wrap;
+  font-weight: bold;
+}
+
+.ifast-col, .ifast-col-md-1, .ifast-col-sm-1, .ifast-col-lg-1, .ifast-col-md-2, .ifast-col-sm-2, .ifast-col-lg-2, .ifast-col-md-3, .ifast-col-sm-3, .ifast-col-lg-3, .ifast-col-md-4, .ifast-col-sm-4, .ifast-col-lg-4, .ifast-col-md-5, .ifast-col-sm-5, .ifast-col-lg-5, .ifast-col-md-6, .ifast-col-sm-6, .ifast-col-lg-6, .ifast-col-md-7, .ifast-col-sm-7, .ifast-col-lg-7, .ifast-col-md-8, .ifast-col-sm-8, .ifast-col-lg-8, .ifast-col-md-9, .ifast-col-sm-9, .ifast-col-lg-9, .ifast-col-md-10, .ifast-col-sm-10, .ifast-col-lg-10, .ifast-col-md-11, .ifast-col-sm-11, .ifast-col-lg-11, .ifast-col-md-12, .ifast-col-sm-12, .ifast-col-lg-12 {
+  text-align: center;
+  border: 1px solid #eee;
+  background-color: #cccc;
+}
+
+.markdown-section p.tip, .markdown-section tr:nth-child(2n) {
+  background: none;
+}
+
+.radio-box .ifast-radio-label {
+  float: left !important;
+}
+/*# sourceMappingURL=reast.css.map */

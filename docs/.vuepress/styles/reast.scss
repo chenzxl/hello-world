@@ -1,0 +1,57 @@
+$css-prefix: ifast-;
+$grid-columns :12;
+$text-color      : #333;
+// 此css 专为清除文档vue-css 影响ifast 的css的样式
+@mixin make-grid-columns($list: ".#{$css-prefix}col") {
+  @for $i from 1 through $grid-columns {
+    $list: "#{$list}, .#{$css-prefix}col-md-#{$i}, .#{$css-prefix}col-sm-#{$i}, .#{$css-prefix}col-lg-#{$i}";
+  }
+  #{$list} {
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: #cccc;
+    box-sizing: border-box;
+  }
+}
+
+table{
+  display: table !important;
+}
+blockquote{
+  border-left: 4px solid var(--theme-color,#42b983);
+  color: #858585;
+  margin: 2em 0;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.content code{
+  border-radius: 2px;
+  color: #e96900;
+  font-size: .8rem;
+  margin: 0 2px;
+  padding: 3px 5px;
+  white-space: pre-wrap;
+  font-weight: bold;
+}
+@include make-grid-columns();
+.markdown-section p.tip, .markdown-section tr:nth-child(2n){
+  background: none;
+}
+.radio-box{
+  .ifast-radio-label{
+    float: left !important;
+  }
+}
+
+.checkbox-box{
+  .ifast-checkbox-label{
+    float: left !important;
+  }
+}
+.demo-carousel{
+  height: 100%;
+  text-align: center;
+  background-color: #506b9e;
+  color: white;
+}
